@@ -1,0 +1,207 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="lG%B$ah?`O!VZmuc$e_o">清單</variable>
+    <variable id="[AL#3hajw.}gqPg9Wa+5">分數</variable>
+    <variable id="%g;p=17et(RPsDb@lEG!">輸入</variable>
+    <variable id="?pe~O6$r*Sha3!jb=R4V">i</variable>
+    <variable id="Qrc6c#WWRfpK25e[vPwP">輸出</variable>
+  </variables>
+  <block type="math_number" id="Cf;/dmpXoz(Rdw{Uu3=-" x="563" y="413">
+    <field name="NUM">0</field>
+  </block>
+  <block type="variables_set" id="l(DGN!;z?i(hzk8Em@sP" x="313" y="538">
+    <field name="VAR" id="lG%B$ah?`O!VZmuc$e_o">清單</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="]XGa25#J@:M[2rM~.s9W">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="[m9k.klsliO,=w:aN?V@">
+        <field name="VAR" id="[AL#3hajw.}gqPg9Wa+5">分數</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id=".B@e*8=AcIZ9tSR(!]Bs">
+            <mutation items="0"></mutation>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="$@g)=$9[QtbDXf8oS`wZ">
+            <field name="VAR" id="%g;p=17et(RPsDb@lEG!">輸入</field>
+            <value name="VALUE">
+              <block type="text_prompt_ext" id="TTjO(lvFnpNV*r$S7wS_">
+                <mutation type="TEXT"></mutation>
+                <field name="TYPE">TEXT</field>
+                <value name="TEXT">
+                  <shadow type="text" id="hx~fqa9)u7fx[V!898T?">
+                    <field name="TEXT">請輸入文字</field>
+                  </shadow>
+                  <block type="text" id="x2r9(BYD{Seii=4e*xeZ">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="FXy`zQq_b)S~s#8Q*]@e">
+                <field name="VAR" id="[AL#3hajw.}gqPg9Wa+5">分數</field>
+                <value name="VALUE">
+                  <block type="lists_split" id="R}oOEFf12Qzch,]@d:-[">
+                    <mutation mode="SPLIT"></mutation>
+                    <field name="MODE">SPLIT</field>
+                    <value name="INPUT">
+                      <block type="variables_get" id="1{Ib)62M]pZv4jqTQw7Y">
+                        <field name="VAR" id="%g;p=17et(RPsDb@lEG!">輸入</field>
+                      </block>
+                    </value>
+                    <value name="DELIM">
+                      <block type="text" id="zkbr4WPGk%ZKaK@wrc|?">
+                        <field name="TEXT"> </field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="N^ocedzat8~!W0+{a.b8">
+                    <field name="VAR" id="[AL#3hajw.}gqPg9Wa+5">分數</field>
+                    <value name="VALUE">
+                      <block type="lists_sort" id="P7s9(QX#cU:)rLI!gWLK">
+                        <field name="TYPE">NUMERIC</field>
+                        <field name="DIRECTION">1</field>
+                        <value name="LIST">
+                          <block type="variables_get" id="y]Zs^g2E^P$j@B0hxc3q">
+                            <field name="VAR" id="[AL#3hajw.}gqPg9Wa+5">分數</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lists_getIndex" id="P!Q2jA`J7Qf^U*q+6jrP">
+                        <mutation statement="true" at="false"></mutation>
+                        <field name="MODE">REMOVE</field>
+                        <field name="WHERE">FIRST</field>
+                        <value name="VALUE">
+                          <block type="variables_get" id="g$@#7?2?RBY9$yW3?QVs">
+                            <field name="VAR" id="[AL#3hajw.}gqPg9Wa+5">分數</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lists_getIndex" id="C)*y+P5#:K2ms$[cWc|)">
+                            <mutation statement="true" at="false"></mutation>
+                            <field name="MODE">REMOVE</field>
+                            <field name="WHERE">LAST</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="OLq,X+--a.Xh%B8Ej2Sy">
+                                <field name="VAR" id="[AL#3hajw.}gqPg9Wa+5">分數</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="controls_for" id=",g3jE*Nv$oaC;YbDreqi">
+                                <field name="VAR" id="?pe~O6$r*Sha3!jb=R4V">i</field>
+                                <value name="FROM">
+                                  <shadow type="math_number" id="/]Y[KBVqzX9jCO.djg^U">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                </value>
+                                <value name="TO">
+                                  <shadow type="math_number" id="#yUS7S`Mlq}+ZV.%ihMt">
+                                    <field name="NUM">10</field>
+                                  </shadow>
+                                  <block type="lists_length" id="Kg!dmQcND#@/[xcHvpvm">
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="PL%cyN0MiET+6RA}|i5f">
+                                        <field name="VAR" id="[AL#3hajw.}gqPg9Wa+5">分數</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="BY">
+                                  <shadow type="math_number" id="CdyuYpw)mW#3$@3CZfCD">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                </value>
+                                <statement name="DO">
+                                  <block type="lists_setIndex" id="RHBMefueONm!#np9H{FN">
+                                    <mutation at="false"></mutation>
+                                    <field name="MODE">INSERT</field>
+                                    <field name="WHERE">LAST</field>
+                                    <value name="LIST">
+                                      <block type="variables_get" id="Au+)e!4eUTNcjpljR.~-">
+                                        <field name="VAR" id="lG%B$ah?`O!VZmuc$e_o">清單</field>
+                                      </block>
+                                    </value>
+                                    <value name="TO">
+                                      <block type="math_arithmetic" id="f,KJGW?LxQHHeJrhGuD|">
+                                        <field name="OP">MULTIPLY</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="$V~^x$yOH_MC}lI$+/G_">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="lists_getIndex" id="TE:WAH$x*xAR)%L6r|pb">
+                                            <mutation statement="false" at="true"></mutation>
+                                            <field name="MODE">GET</field>
+                                            <field name="WHERE">FROM_START</field>
+                                            <value name="VALUE">
+                                              <block type="variables_get" id="*,{;X=y=)~[K$47y?76m">
+                                                <field name="VAR" id="[AL#3hajw.}gqPg9Wa+5">分數</field>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="variables_get" id="W0EjPU7b!h4CM]w=~Lc!">
+                                                <field name="VAR" id="?pe~O6$r*Sha3!jb=R4V">i</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="tf)^A5oVdJeEXr}dbAR/">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="variables_set" id="u[yT-ldr()V4fM/E,gCl">
+                                    <field name="VAR" id="Qrc6c#WWRfpK25e[vPwP">輸出</field>
+                                    <value name="VALUE">
+                                      <block type="math_on_list" id="7wtX3oC^(Qly(|sdTHX(">
+                                        <mutation op="SUM"></mutation>
+                                        <field name="OP">SUM</field>
+                                        <value name="LIST">
+                                          <block type="variables_get" id="9$ZdI1xP(8{ePJiA=Yas">
+                                            <field name="VAR" id="lG%B$ah?`O!VZmuc$e_o">清單</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="text_print" id="j1@?dY#hK~!$wy[`4w)}">
+                                        <value name="TEXT">
+                                          <shadow type="text" id="F2_r73#nqy,K,BQzJUtH">
+                                            <field name="TEXT">abc</field>
+                                          </shadow>
+                                          <block type="variables_get" id="gAIB.5G1yecIk|y5VV(=">
+                                            <field name="VAR" id="Qrc6c#WWRfpK25e[vPwP">輸出</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
