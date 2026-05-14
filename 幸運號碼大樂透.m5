@@ -1,0 +1,1117 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="#OmDPaS91ItZ|p-Q0D)W">獎金</variable>
+    <variable id="yRbZy%7e?{LHZQ.`%Jj4">數目</variable>
+    <variable id="Cl;%Qy|U$kVf[,kq({l{">中獎數</variable>
+    <variable id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</variable>
+    <variable id="A$`J]rWEYQLo9-JR:$^+">學生號碼</variable>
+    <variable id="p$=uE8co~ZtMxKxhA|[6">輸入</variable>
+    <variable id="Ev)JNyd;#74F$xIA`cj|">i</variable>
+  </variables>
+  <block type="variables_set" id="_i+dXF4@{!F67^5G5$)T" x="338" y="-63">
+    <field name="VAR" id="#OmDPaS91ItZ|p-Q0D)W">獎金</field>
+    <value name="VALUE">
+      <block type="math_number" id="Rh6#bKy*WGIK.,2xWR{O">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="ZtTp:z_)_3v/0fd`Q(sQ">
+        <field name="VAR" id="yRbZy%7e?{LHZQ.`%Jj4">數目</field>
+        <value name="VALUE">
+          <block type="math_number" id="=vBZFI9Ja4Ku@+*AC;h+">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="{sUpX*eepHbh.l0VHtn~">
+            <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+            <value name="VALUE">
+              <block type="math_number" id="v[yN`?;}P*^[z,~OB:Bk">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="t*sw=S[EQA:cCsGCXRoE">
+                <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                <value name="VALUE">
+                  <block type="lists_create_with" id="8q-ACx)@k}l5,E$D4jX)">
+                    <mutation items="0"></mutation>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="zY#P=NFFqp]KrjfvjQ{5">
+                    <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                    <value name="VALUE">
+                      <block type="lists_create_with" id="ra!v7F_rKQMd)Y!a}Y/o">
+                        <mutation items="0"></mutation>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lists_setIndex" id="pJa7h_}}y~^EhA_O_K12">
+                        <mutation at="false"></mutation>
+                        <field name="MODE">INSERT</field>
+                        <field name="WHERE">LAST</field>
+                        <value name="LIST">
+                          <block type="variables_get" id="~|Fw|nxh`,{#o[geO-bt">
+                            <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="text" id="erdZau10olGjIL-O0?vd">
+                            <field name="TEXT">7</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lists_setIndex" id="JWG;|np9$yBH|gw4gZi-">
+                            <mutation at="false"></mutation>
+                            <field name="MODE">INSERT</field>
+                            <field name="WHERE">LAST</field>
+                            <value name="LIST">
+                              <block type="variables_get" id="I{RgCwRJmgLki^%Qfj-n">
+                                <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block type="text" id="l`]4zS3v3Lg):TnnHt@)">
+                                <field name="TEXT">24</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="lists_setIndex" id="sw{wPGN0;Kb0u-k-1s=Y">
+                                <mutation at="false"></mutation>
+                                <field name="MODE">INSERT</field>
+                                <field name="WHERE">LAST</field>
+                                <value name="LIST">
+                                  <block type="variables_get" id="a}4b(66/C=@5qutQ2yH4">
+                                    <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                  </block>
+                                </value>
+                                <value name="TO">
+                                  <block type="text" id="BuQdWt%DH*PZwY@lIV5A">
+                                    <field name="TEXT">31</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="lists_setIndex" id="aL?mTCcs2rreiJ$+:mbP">
+                                    <mutation at="false"></mutation>
+                                    <field name="MODE">INSERT</field>
+                                    <field name="WHERE">LAST</field>
+                                    <value name="LIST">
+                                      <block type="variables_get" id="CT^RllsbW/p@tS`ap(|Y">
+                                        <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                      </block>
+                                    </value>
+                                    <value name="TO">
+                                      <block type="text" id="kAie}$*Q/_q$AZI?(4-9">
+                                        <field name="TEXT">42</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="lists_setIndex" id="V:i8+ef(@dn4@zI2%sdg">
+                                        <mutation at="false"></mutation>
+                                        <field name="MODE">INSERT</field>
+                                        <field name="WHERE">LAST</field>
+                                        <value name="LIST">
+                                          <block type="variables_get" id="{SGlk6pG05(HULY!(@8f">
+                                            <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                          </block>
+                                        </value>
+                                        <value name="TO">
+                                          <block type="text" id="~+XiRXF+wjN%aBL=Xow[">
+                                            <field name="TEXT">45</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="lists_setIndex" id="^q6g28QFv_.(@b.]5z2*">
+                                            <mutation at="false"></mutation>
+                                            <field name="MODE">INSERT</field>
+                                            <field name="WHERE">LAST</field>
+                                            <value name="LIST">
+                                              <block type="variables_get" id="%;JuMpHv9M*ffCk]sMZ%">
+                                                <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                              </block>
+                                            </value>
+                                            <value name="TO">
+                                              <block type="text" id="Tio~%GmeO4j?:MTr9%3F">
+                                                <field name="TEXT">56</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="lists_setIndex" id="GlEAe|9|}pN18p$@F.x#">
+                                                <mutation at="false"></mutation>
+                                                <field name="MODE">INSERT</field>
+                                                <field name="WHERE">LAST</field>
+                                                <value name="LIST">
+                                                  <block type="variables_get" id="?8_[y(Pn.N@S*1c8DGjC">
+                                                    <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                                  </block>
+                                                </value>
+                                                <value name="TO">
+                                                  <block type="text" id="DenhB93sLQJlH-|U!~-G">
+                                                    <field name="TEXT">63</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="lists_setIndex" id=")1sPM=F))gz4V`JApqI+">
+                                                    <mutation at="false"></mutation>
+                                                    <field name="MODE">INSERT</field>
+                                                    <field name="WHERE">LAST</field>
+                                                    <value name="LIST">
+                                                      <block type="variables_get" id="Qq07/$F+_6alB@eRl5Xq">
+                                                        <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="TO">
+                                                      <block type="text" id="$Cz*CW2Bb_`r=c.]oqQ2">
+                                                        <field name="TEXT">78</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="lists_setIndex" id="/0(Jwg-pII%8.4V;i3wI">
+                                                        <mutation at="false"></mutation>
+                                                        <field name="MODE">INSERT</field>
+                                                        <field name="WHERE">LAST</field>
+                                                        <value name="LIST">
+                                                          <block type="variables_get" id="MgvL-B41iR,(%xfQ(kXB">
+                                                            <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="TO">
+                                                          <block type="text" id="Kdo=K;Jp$`?G}5hElrfg">
+                                                            <field name="TEXT">80</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="lists_setIndex" id="UYXuhBiYr7_RTlZs[m3q">
+                                                            <mutation at="false"></mutation>
+                                                            <field name="MODE">INSERT</field>
+                                                            <field name="WHERE">LAST</field>
+                                                            <value name="LIST">
+                                                              <block type="variables_get" id="|{X^geuwb1L;tj[GPVok">
+                                                                <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="TO">
+                                                              <block type="text" id="y4$(2|MMZb09]~1p3@}i">
+                                                                <field name="TEXT">99</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="variables_set" id="GIW+[TwNCyi+amO,CZX4">
+                                                                <field name="VAR" id="p$=uE8co~ZtMxKxhA|[6">輸入</field>
+                                                                <value name="VALUE">
+                                                                  <block type="text_prompt_ext" id="@5jtp={s9CWfWS})h{p+">
+                                                                    <mutation type="TEXT"></mutation>
+                                                                    <field name="TYPE">TEXT</field>
+                                                                    <value name="TEXT">
+                                                                      <shadow type="text" id="P8`7rAbW~I7by@Ckx-sg">
+                                                                        <field name="TEXT">請輸入文字</field>
+                                                                      </shadow>
+                                                                      <block type="text" id="tTjm+X_1xfR@=*F?*7qw">
+                                                                        <field name="TEXT"></field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="variables_set" id="^3d=wy7LzC:NA*x+YCQE">
+                                                                    <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="lists_split" id="E0ppQwu)3mn{SoK1@7!O">
+                                                                        <mutation mode="SPLIT"></mutation>
+                                                                        <field name="MODE">SPLIT</field>
+                                                                        <value name="INPUT">
+                                                                          <block type="variables_get" id="06H+(![P65^^)P`$K%^4">
+                                                                            <field name="VAR" id="p$=uE8co~ZtMxKxhA|[6">輸入</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="DELIM">
+                                                                          <block type="text" id="rj-4e*]$.?2YoFnkhM@k">
+                                                                            <field name="TEXT"> </field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="controls_for" id="OVvX(Kt(#$@?q,!C=$17">
+                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                        <value name="FROM">
+                                                                          <shadow type="math_number" id="7l.9C#.KWf!OPw,iXnP|">
+                                                                            <field name="NUM">1</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <value name="TO">
+                                                                          <shadow type="math_number" id=".(a?L,jd3|v7{u;KJ3.U">
+                                                                            <field name="NUM">10</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <value name="BY">
+                                                                          <shadow type="math_number" id="xqO)JBHzu7@AKRRjUuI.">
+                                                                            <field name="NUM">1</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <statement name="DO">
+                                                                          <block type="controls_if" id="}^~FO)3RTyNV/(__P]VB">
+                                                                            <mutation elseif="9"></mutation>
+                                                                            <value name="IF0">
+                                                                              <block type="logic_compare" id="LuvVnwuBQoXB(oqM7W)c">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="lists_getIndex" id=".e8~zp4kb;d7t/?cMW}:">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_START</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="?doltk{~sThVVRRr!t-}">
+                                                                                        <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="A1[p!RIS=%HT#27/]wC:">
+                                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="t@=6|Y[yUS_y=12hBrX)">
+                                                                                    <field name="NUM">7</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO0">
+                                                                              <block type="math_change" id="J1Que{##?PP`mP8]9$vv">
+                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                <value name="DELTA">
+                                                                                  <shadow type="math_number" id="E05bo;zX1V}F!6$66rvp">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_number" id="Lr+^BwvqYS:wkN-z#G6d">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <value name="IF1">
+                                                                              <block type="logic_compare" id="+$~7W+/X:D4BTvLlJ4Ue">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="lists_getIndex" id="nQG2/uerc,g(+|QA;cf4">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_START</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="GR([xg=(bbCMHhJ0:zn@">
+                                                                                        <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="@0x:obySQYTdhx(Hha6U">
+                                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="|8ob|m+o~}iG^ar,t9:2">
+                                                                                    <field name="NUM">24</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO1">
+                                                                              <block type="math_change" id="hZxBHF3uYikT4soDJcd}">
+                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                <value name="DELTA">
+                                                                                  <shadow type="math_number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_number" id="0ILT/pqNDq%[T{{LeuY#">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <value name="IF2">
+                                                                              <block type="logic_compare" id="-PfzLMIz03|)_#qX_k=4">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="lists_getIndex" id="jo[3y@/no!~4;6]q-DDQ">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_START</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="ySgzRAI^ZL!Ank]V]rgX">
+                                                                                        <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="%vo-t6:7AxOVKU6b6dvC">
+                                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="mI=Gdcod#m4]8x7=R/~{">
+                                                                                    <field name="NUM">31</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO2">
+                                                                              <block type="math_change" id="k,CgY]U33{OpubX]V.{4">
+                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                <value name="DELTA">
+                                                                                  <shadow type="math_number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_number" id="/Ht@ft~~D*(C]0jkE?.8">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <value name="IF3">
+                                                                              <block type="logic_compare" id="Wd?.B!oS?r]E$jzwXK(D">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="lists_getIndex" id="xQKESo4#}o+4ttjn)CDY">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_START</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="^ZqFYzm3+2:x0[v8vFr%">
+                                                                                        <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="M*,5f`(tb_%9[lfW^U-/">
+                                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="*sMR=Yv`}4rcWpKKqf7x">
+                                                                                    <field name="NUM">42</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO3">
+                                                                              <block type="math_change" id="Na0ImrJwV!T-P+FR;dv?">
+                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                <value name="DELTA">
+                                                                                  <shadow type="math_number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_number" id="7K,$17qD{HJJGt[Rd]CV">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <value name="IF4">
+                                                                              <block type="logic_compare" id="q.2#w6b2%qx(d[X~_UuO">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="lists_getIndex" id="L-##K`5kkyttsQF-ADH:">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_START</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="xl]*.3u~GPY5PI7mcLAt">
+                                                                                        <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="4Wk~1(Y#n3{wx;wK|pfA">
+                                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="~,X}B3RC|XNoOaJZDg2U">
+                                                                                    <field name="NUM">45</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO4">
+                                                                              <block type="math_change" id="hm/FiKolurZmC4,ikrKY">
+                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                <value name="DELTA">
+                                                                                  <shadow type="math_number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_number" id="%O`esG:t+3%6W5QbLrmv">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <value name="IF5">
+                                                                              <block type="logic_compare" id="ewv]JIim:u(h8@TY6Y(_">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="lists_getIndex" id="b],u@RF?/Di^XyxZ[gU9">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_START</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="iP2V6PS:Ht;*z@5.uC||">
+                                                                                        <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="]=31f@uyWM+19tS#mgq8">
+                                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="z.hbcb6YF0Z32FL@Fh(]">
+                                                                                    <field name="NUM">56</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO5">
+                                                                              <block type="math_change" id="|j,TG*$N#HMFciyDZYLx">
+                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                <value name="DELTA">
+                                                                                  <shadow type="math_number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_number" id="I=IMnA5vqO24/aJY+lxb">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <value name="IF6">
+                                                                              <block type="logic_compare" id=":N)H!yKR4padtucRW|@R">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="lists_getIndex" id="mZqiG@wJ@`*qS$v{l41H">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_START</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="o}jrs?)J/kuQ9bks(,cn">
+                                                                                        <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="4ILLU0?`aZQv[}|D`SKm">
+                                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="Q5O#K{}V_W)~{hjn+%jR">
+                                                                                    <field name="NUM">63</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO6">
+                                                                              <block type="math_change" id="*ena5RiB^v;YL{LB9~W%">
+                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                <value name="DELTA">
+                                                                                  <shadow type="math_number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_number" id="f);?a!|fUMQf?tD{#fq%">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <value name="IF7">
+                                                                              <block type="logic_compare" id="lP:qD[0b^z#kdY+~A^K=">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="lists_getIndex" id="6Ml/7gaKe)d_cW90G%nw">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_START</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="Y5Dvji(@,Q8HGGzMNJyW">
+                                                                                        <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="LN=osJ71;NZ[jqiBvfke">
+                                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="z]q+}xsz|{z?SP-l8[Eg">
+                                                                                    <field name="NUM">78</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO7">
+                                                                              <block type="math_change" id="CYrAo$9!:q^}JO#K5aEr">
+                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                <value name="DELTA">
+                                                                                  <shadow type="math_number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_number" id="wU0h_:xnRZ|t{Sf0VieK">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <value name="IF8">
+                                                                              <block type="logic_compare" id="l0d*s@HEOnW~.N6kKM)6">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="lists_getIndex" id="q0yZ%t=O4MGmJf{Rbk-R">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_START</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="y~xd1KFw_PsBg^:!UGIU">
+                                                                                        <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="IhB[[L%nqncMK~D=t60{">
+                                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="S)e43tC=nO!U)!{|3$4%">
+                                                                                    <field name="NUM">80</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO8">
+                                                                              <block type="math_change" id="zjyM8/^)YDf~bT{-@Yhv">
+                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                <value name="DELTA">
+                                                                                  <shadow type="math_number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_number" id="en3O]:/hXL|mPMuig#vo">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <value name="IF9">
+                                                                              <block type="logic_compare" id="CiIju|w2_PD~^.]9DJbp">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="lists_getIndex" id="cU*k6FH42;Kdq|:cLZo9">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_START</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="Jn2G`o3$#d)ydz#?uQ7#">
+                                                                                        <field name="VAR" id="A$`J]rWEYQLo9-JR:$^+">學生號碼</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="CVaX.6Y?(_SoH4AyU*A*">
+                                                                                        <field name="VAR" id="Ev)JNyd;#74F$xIA`cj|">i</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="fp,)R|x-Njdxyo#bkZBI">
+                                                                                    <field name="NUM">99</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO9">
+                                                                              <block type="math_change" id="2NW?L0*,2Yw?O6t1y21e">
+                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                <value name="DELTA">
+                                                                                  <shadow type="math_number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_number" id="=bsUsA@Rh/%CN@n/2?fK">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                          </block>
+                                                                        </statement>
+                                                                        <next>
+                                                                          <block type="controls_if" id="Jtu6EnJxl4)h/Qu$thVj">
+                                                                            <value name="IF0">
+                                                                              <block type="logic_compare" id="l5^#vO,kb9OCl}Tczre*">
+                                                                                <field name="OP">EQ</field>
+                                                                                <value name="A">
+                                                                                  <block type="variables_get" id="$?$wKWCrw]rk+XfquQLr">
+                                                                                    <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="vh^sY$f^x}iMSbgA|,!i">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO0">
+                                                                              <block type="variables_set" id="+Ab-H#/)mBtpINa`mo5;">
+                                                                                <field name="VAR" id="#OmDPaS91ItZ|p-Q0D)W">獎金</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="math_number" id="g6/mMb?{+/tGy$P=u::5">
+                                                                                    <field name="NUM">200</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <next>
+                                                                              <block type="controls_if" id="5px_(4V}U{(QNbF7?bxM">
+                                                                                <value name="IF0">
+                                                                                  <block type="logic_compare" id="FL#;c(y%7eq]ZvB[n8~P">
+                                                                                    <field name="OP">EQ</field>
+                                                                                    <value name="A">
+                                                                                      <block type="variables_get" id="/pwGI|)vxKaL%RpE%RHA">
+                                                                                        <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="B">
+                                                                                      <block type="math_number" id="E3lJ3e+P,.sw9OJWx2X0">
+                                                                                        <field name="NUM">2</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <statement name="DO0">
+                                                                                  <block type="variables_set" id="R]yLa^f:+G?:1y/lzA;c">
+                                                                                    <field name="VAR" id="#OmDPaS91ItZ|p-Q0D)W">獎金</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="math_number" id="4GaOvw~/,K5iAK(rR^qU">
+                                                                                        <field name="NUM">500</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </statement>
+                                                                                <next>
+                                                                                  <block type="controls_if" id="aHwm*9^$ED%vPx!OcGzY">
+                                                                                    <value name="IF0">
+                                                                                      <block type="logic_compare" id="0|U@pN?eZLr@n;,]T#ZW">
+                                                                                        <field name="OP">EQ</field>
+                                                                                        <value name="A">
+                                                                                          <block type="variables_get" id="=~yOAx%)YRGxUS!QU`z4">
+                                                                                            <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="math_number" id="oTa4?~sJ.jX(VKh*,@UI">
+                                                                                            <field name="NUM">3</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <statement name="DO0">
+                                                                                      <block type="variables_set" id="OVUALLIL^@qQxPi9S,3B">
+                                                                                        <field name="VAR" id="#OmDPaS91ItZ|p-Q0D)W">獎金</field>
+                                                                                        <value name="VALUE">
+                                                                                          <block type="math_number" id="[rl|w^V$$K6kEYB0[.O`">
+                                                                                            <field name="NUM">2000</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </statement>
+                                                                                    <next>
+                                                                                      <block type="controls_if" id="-Z8,?7![JPS:p8h:Z)}M">
+                                                                                        <value name="IF0">
+                                                                                          <block type="logic_compare" id=",X3g(:#hpAG$B.sTxk-0">
+                                                                                            <field name="OP">EQ</field>
+                                                                                            <value name="A">
+                                                                                              <block type="variables_get" id="AtJq9?pQ0q/CR^]VY6|K">
+                                                                                                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="B">
+                                                                                              <block type="math_number" id="M3a=(rUs,j`1b3vCRA1b">
+                                                                                                <field name="NUM">4</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <statement name="DO0">
+                                                                                          <block type="variables_set" id="_E_j~j%a4,S|Y_a*54Z*">
+                                                                                            <field name="VAR" id="#OmDPaS91ItZ|p-Q0D)W">獎金</field>
+                                                                                            <value name="VALUE">
+                                                                                              <block type="math_number" id="kKDB6^I!GRgHIV4ogcSM">
+                                                                                                <field name="NUM">10000</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </statement>
+                                                                                        <next>
+                                                                                          <block type="controls_if" id="8aIu1$#jvF42ovs`|*OK">
+                                                                                            <value name="IF0">
+                                                                                              <block type="logic_compare" id=";PUp^q5yFhkCYGfM!?SM">
+                                                                                                <field name="OP">EQ</field>
+                                                                                                <value name="A">
+                                                                                                  <block type="variables_get" id="0*#/!}R$_#L6IX1H$,5I">
+                                                                                                    <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="B">
+                                                                                                  <block type="math_number" id="[GU}n@qT*.sl_5Cgj,6T">
+                                                                                                    <field name="NUM">5</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <statement name="DO0">
+                                                                                              <block type="variables_set" id="ui};pA#8UkIxk!U^wiGO">
+                                                                                                <field name="VAR" id="#OmDPaS91ItZ|p-Q0D)W">獎金</field>
+                                                                                                <value name="VALUE">
+                                                                                                  <block type="math_number" id="_[s*7,ZVyOP|F((`RV=3">
+                                                                                                    <field name="NUM">100000</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </statement>
+                                                                                            <next>
+                                                                                              <block type="text_print" id="-oU]?0^ypMxQRVP6sp73">
+                                                                                                <value name="TEXT">
+                                                                                                  <shadow type="text" id="y6);`7BR;`9i:Zgqp{-R">
+                                                                                                    <field name="TEXT">abc</field>
+                                                                                                  </shadow>
+                                                                                                  <block type="text_join" id="}:;K@@u/Yx=}sONV`(l2">
+                                                                                                    <mutation items="5"></mutation>
+                                                                                                    <value name="ADD0">
+                                                                                                      <block type="text" id=",).?t.#abNE$],56R|ty">
+                                                                                                        <field name="TEXT">猜中</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="ADD1">
+                                                                                                      <block type="variables_get" id="tH(ZI(jXZUB-^pTZ1z[d">
+                                                                                                        <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="ADD2">
+                                                                                                      <block type="text" id="k_L,Qj/?xR^bTC2DML_|">
+                                                                                                        <field name="TEXT">個號碼，獎金</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="ADD3">
+                                                                                                      <block type="variables_get" id="eBaf?vlc=MxvBDSxkLV=">
+                                                                                                        <field name="VAR" id="#OmDPaS91ItZ|p-Q0D)W">獎金</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="ADD4">
+                                                                                                      <block type="text" id="KG})IAJ@kl5-BT^H?fac">
+                                                                                                        <field name="TEXT">元</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="controls_repeat_ext" id="oK1j/O{m]bTTyPk5x_z." disabled="true" x="-187" y="-13">
+    <value name="TIMES">
+      <shadow type="math_number" id="$gdHKYvt.m0`VG+/)}po">
+        <field name="NUM">10</field>
+      </shadow>
+    </value>
+    <statement name="DO">
+      <block type="lists_setIndex" id="vHlp8^I)aIgqTqZzh,).">
+        <mutation at="false"></mutation>
+        <field name="MODE">INSERT</field>
+        <field name="WHERE">LAST</field>
+        <value name="LIST">
+          <block type="variables_get" id="HuXS-q`u.e2N}ZevjEQ%">
+            <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+          </block>
+        </value>
+        <value name="TO">
+          <block type="text" id="}~2V8ox)3)p,utU6qWfz">
+            <field name="TEXT">7</field>
+          </block>
+        </value>
+        <next>
+          <block type="lists_setIndex" id="`hOIvtCd}t;9EZoy6rn2">
+            <mutation at="false"></mutation>
+            <field name="MODE">INSERT</field>
+            <field name="WHERE">LAST</field>
+            <value name="LIST">
+              <block type="variables_get" id=",Qt3X::B@H7,@#FlP^,0">
+                <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="text" id="IO@}{Qd@hv7[8E80^c-A">
+                <field name="TEXT">24</field>
+              </block>
+            </value>
+            <next>
+              <block type="lists_setIndex" id="tBaX-xbYHhxap]TiLu|l">
+                <mutation at="false"></mutation>
+                <field name="MODE">INSERT</field>
+                <field name="WHERE">LAST</field>
+                <value name="LIST">
+                  <block type="variables_get" id="d:zzW4}v^BjzIXFg;2]u">
+                    <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="text" id="VtN+,f?{/nX^+%w*Ly{M">
+                    <field name="TEXT">31</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="lists_setIndex" id="}U(-xFfoZ](;?Ma#vJEA">
+                    <mutation at="false"></mutation>
+                    <field name="MODE">INSERT</field>
+                    <field name="WHERE">LAST</field>
+                    <value name="LIST">
+                      <block type="variables_get" id="P=wn/:V`Rjubd(}mN_91">
+                        <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="text" id="kL`F1=b9~3M[#W*:S_b3">
+                        <field name="TEXT">42</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lists_setIndex" id="jE*!7ByFN.DIR05D%RIc">
+                        <mutation at="false"></mutation>
+                        <field name="MODE">INSERT</field>
+                        <field name="WHERE">LAST</field>
+                        <value name="LIST">
+                          <block type="variables_get" id="]0Y/H.rF]})XnuQzNvRE">
+                            <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="text" id="P@IuF8SeHxzxeD2{!|k:">
+                            <field name="TEXT">45</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lists_setIndex" id="|E]lY[3R%t{G7DG~h}I]">
+                            <mutation at="false"></mutation>
+                            <field name="MODE">INSERT</field>
+                            <field name="WHERE">LAST</field>
+                            <value name="LIST">
+                              <block type="variables_get" id="5,P{##%wk)iiDC`aBh^b">
+                                <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block type="text" id="G1|#`+gbqTl-_a4Jo%2@">
+                                <field name="TEXT">56</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="lists_setIndex" id="O;L|9H)lm]BObd;v2-c]">
+                                <mutation at="false"></mutation>
+                                <field name="MODE">INSERT</field>
+                                <field name="WHERE">LAST</field>
+                                <value name="LIST">
+                                  <block type="variables_get" id="^fJo!.WCHE)*]Wpt-QSv">
+                                    <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                  </block>
+                                </value>
+                                <value name="TO">
+                                  <block type="text" id="5sc%nU2W/4[e@!#GT4G4">
+                                    <field name="TEXT">63</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="lists_setIndex" id="o]G)ilM9O,F)qnf3!dI]">
+                                    <mutation at="false"></mutation>
+                                    <field name="MODE">INSERT</field>
+                                    <field name="WHERE">LAST</field>
+                                    <value name="LIST">
+                                      <block type="variables_get" id="VhN`!bd8:I=-#GdZrKU~">
+                                        <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                      </block>
+                                    </value>
+                                    <value name="TO">
+                                      <block type="text" id="n~Y20,{g1if)+#X!fTru">
+                                        <field name="TEXT">78</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="lists_setIndex" id="Lu?ru8hCF/T,SasBHvFA">
+                                        <mutation at="false"></mutation>
+                                        <field name="MODE">INSERT</field>
+                                        <field name="WHERE">LAST</field>
+                                        <value name="LIST">
+                                          <block type="variables_get" id="S3]0,8u)YfzpypGrm@EK">
+                                            <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                          </block>
+                                        </value>
+                                        <value name="TO">
+                                          <block type="text" id="]/a#$Fy}h0#jcm(sA]?h">
+                                            <field name="TEXT">80</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="lists_setIndex" id=":aXYlpC],BJhI%bHSz@s">
+                                            <mutation at="false"></mutation>
+                                            <field name="MODE">INSERT</field>
+                                            <field name="WHERE">LAST</field>
+                                            <value name="LIST">
+                                              <block type="variables_get" id="Dk]*T3KTj,cooZZCh[2i">
+                                                <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+                                              </block>
+                                            </value>
+                                            <value name="TO">
+                                              <block type="text" id="ZJtM#`u}`QW-,[a,l`WT">
+                                                <field name="TEXT">99</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="controls_repeat_ext" id="0J[BG1IFoDZwnUHY$K,P" disabled="true" x="913" y="113">
+    <value name="TIMES">
+      <shadow type="math_number" id="s$Hv*;dRY)%W5m4J(73S">
+        <field name="NUM">10</field>
+      </shadow>
+    </value>
+    <statement name="DO">
+      <block type="variables_set" id="A.qKMR7[jzqE+;7My*U}">
+        <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+        <value name="VALUE">
+          <block type="lists_indexOf" id="dj0R7]2h(h=NJ.Wq$8aa">
+            <field name="END">FIRST</field>
+            <value name="VALUE">
+              <block type="variables_get" id="hfIq+5}SZyB)qcrF*94h">
+                <field name="VAR" id="@Ic]_dtpx.k@}R%w0=EU">幸運號碼</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="];/0H}XW;1yuqbfia2]%">
+            <value name="IF0">
+              <block type="logic_compare" id="N4frJjAl*{P}LB-#E%BO">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="variables_get" id="m?)t/i6nFk1h[~PAj6Mg">
+                    <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="0Nn3gkW:a05z6x!bs$-j">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="math_change" id="27X.LL@l-1Mmbp21b{w(">
+                <field name="VAR" id="yRbZy%7e?{LHZQ.`%Jj4">數目</field>
+                <value name="DELTA">
+                  <shadow type="math_number" id="+q5nZX@bmmnPl~)4Ym)8">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="math_number" id="#E|;P=V@%o!6Kst.vGOs">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="variables_set" id="S3ePJDMn2eiI15W%c`6n">
+                <field name="VAR" id="Cl;%Qy|U$kVf[,kq({l{">中獎數</field>
+                <value name="VALUE">
+                  <block type="math_number" id="_QTg#h$0v@{fwcvhTYzY">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
