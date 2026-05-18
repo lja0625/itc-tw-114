@@ -1,0 +1,594 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="/pC]a#1`P4:[z9xs.e,*">七福村價錢</variable>
+    <variable id="/nO?;XSM[vVDZ~+I.qZ6">大人國價錢</variable>
+    <variable id="Jb$z-Yg!3{$-GgDjaxth">大人國-65以上</variable>
+    <variable id=",2vv]ZR.YE@J%Ii=E0c^">年齡</variable>
+    <variable id="MZHw_ln%n8awl-=H+ju1">人數</variable>
+    <variable id="^Qn.^WY@ygu]x-V69UMW">詢問年齡</variable>
+    <variable id="5GnwyOl/l$V|QG4_YGse">i</variable>
+    <variable id="Wo[7_COPpTm(?ycq~h*e">大人國-12以下</variable>
+  </variables>
+  <block type="variables_set" id="vs}1jBJoe_|*:=;I={WJ" x="437" y="-12">
+    <field name="VAR" id="/pC]a#1`P4:[z9xs.e,*">七福村價錢</field>
+    <value name="VALUE">
+      <block type="math_number" id="[sb!M?z3)Az9|pEYR)w5">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="lk.?:B:(tz`PVrT!UHWe">
+        <field name="VAR" id="/nO?;XSM[vVDZ~+I.qZ6">大人國價錢</field>
+        <value name="VALUE">
+          <block type="math_number" id="8^qo%DyA^yT=,s2#mB;@">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="C7,4N@I%E1[mLNuEeio0">
+            <field name="VAR" id="Jb$z-Yg!3{$-GgDjaxth">大人國-65以上</field>
+            <value name="VALUE">
+              <block type="math_number" id=".aNvEGPAnaBURCM4;wDT">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="(]]Qwe7K!,.VH=G-)?yH">
+                <field name="VAR" id=",2vv]ZR.YE@J%Ii=E0c^">年齡</field>
+                <value name="VALUE">
+                  <block type="lists_create_with" id="[_pFPiUtdbeTjhUN}|yD">
+                    <mutation items="0"></mutation>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="wx~Tv}{nsRLePTKs1[qg">
+                    <field name="VAR" id="MZHw_ln%n8awl-=H+ju1">人數</field>
+                    <value name="VALUE">
+                      <block type="text_prompt_ext" id="K%%BI9.0~{VC2_`fOI0c">
+                        <mutation type="TEXT"></mutation>
+                        <field name="TYPE">TEXT</field>
+                        <value name="TEXT">
+                          <shadow type="text" id="XRLIMEHX,oga(EF~~Lm=">
+                            <field name="TEXT">請輸入文字</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="{01PHMvGImYnf]k=5t1(">
+                        <field name="VAR" id="^Qn.^WY@ygu]x-V69UMW">詢問年齡</field>
+                        <value name="VALUE">
+                          <block type="text_prompt_ext" id="2dC)$!E#%`VHC4`1uu~X">
+                            <mutation type="TEXT"></mutation>
+                            <field name="TYPE">TEXT</field>
+                            <value name="TEXT">
+                              <shadow type="text" id="?{[u/nN]x*e@==o5apr(">
+                                <field name="TEXT">請輸入文字</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="V|:rt(:hB#vSZr[$dIj^">
+                            <field name="VAR" id=",2vv]ZR.YE@J%Ii=E0c^">年齡</field>
+                            <value name="VALUE">
+                              <block type="lists_split" id="l-b%J$ZojD*nXK)$uzzS">
+                                <mutation mode="SPLIT"></mutation>
+                                <field name="MODE">SPLIT</field>
+                                <value name="INPUT">
+                                  <block type="variables_get" id="c@A(~;c=-Sn`fvIF9dI(">
+                                    <field name="VAR" id="^Qn.^WY@ygu]x-V69UMW">詢問年齡</field>
+                                  </block>
+                                </value>
+                                <value name="DELIM">
+                                  <block type="text" id="iXJtT0K5UO#-6+Je2!B!">
+                                    <field name="TEXT"> </field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="controls_for" id="Iuct.Q3#N=F8hYD_MzLM">
+                                <field name="VAR" id="5GnwyOl/l$V|QG4_YGse">i</field>
+                                <value name="FROM">
+                                  <shadow type="math_number" id="tYNW8b.PSj;MR7du4|b?">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_number" id="s$wMg,dLgt5:fbynO9)/">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <value name="TO">
+                                  <shadow type="math_number" id="MBCe!e#pVRZoX_1.Vk#t">
+                                    <field name="NUM">10</field>
+                                  </shadow>
+                                  <block type="variables_get" id="CO:g$Jp3d@aRY31_x]NX">
+                                    <field name="VAR" id="MZHw_ln%n8awl-=H+ju1">人數</field>
+                                  </block>
+                                </value>
+                                <value name="BY">
+                                  <shadow type="math_number" id="x8F=wG$D8}E}:`Cnf77+">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_number" id="Rhv8qtCcS)M-JJB1c+P3">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <statement name="DO">
+                                  <block type="controls_if" id=".:Yljq~bPlWlegCnC,0l">
+                                    <mutation else="1"></mutation>
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="q10z7BnTOukZc(HR/}l+">
+                                        <field name="OP">GT</field>
+                                        <value name="A">
+                                          <block type="lists_getIndex" id="9?d7KQ]5D*R{H1GnNtsd">
+                                            <mutation statement="false" at="true"></mutation>
+                                            <field name="MODE">GET</field>
+                                            <field name="WHERE">FROM_START</field>
+                                            <value name="VALUE">
+                                              <block type="variables_get" id="}q/YUrfi_lT]SbSw/eo%">
+                                                <field name="VAR" id=",2vv]ZR.YE@J%Ii=E0c^">年齡</field>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="variables_get" id="6ZTCJ^-y@n!83inF2qfF">
+                                                <field name="VAR" id="5GnwyOl/l$V|QG4_YGse">i</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="wrwJ4uY.5)sy15iN]Wb7">
+                                            <field name="NUM">12</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="controls_if" id="gyd_[dHJ`!][b83z{)g+">
+                                        <value name="IF0">
+                                          <block type="logic_compare" id="GUVCp5o#`J+*F~4:@qx4">
+                                            <field name="OP">GT</field>
+                                            <value name="A">
+                                              <block type="lists_getIndex" id="nXR2U#r)X}Sxv?,TD?fR">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="OPd=S;Gng,Nm5/6hl6a-">
+                                                    <field name="VAR" id=",2vv]ZR.YE@J%Ii=E0c^">年齡</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="variables_get" id="lDmNQO#L|;rMw,iEQ}#x">
+                                                    <field name="VAR" id="5GnwyOl/l$V|QG4_YGse">i</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="^Q=hzSG+5ugY7c6-y4my">
+                                                <field name="NUM">64</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="math_change" id="G_dG]`ZJgOV=T`X3.by[">
+                                            <field name="VAR" id="Jb$z-Yg!3{$-GgDjaxth">大人國-65以上</field>
+                                            <value name="DELTA">
+                                              <shadow type="math_number" id="j*]sAZ@d=*9UmkoE,4JG">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_number" id="z@n7gy7wc1@uHqNUMyE7">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="math_change" id="XP=mT$45puC1T0V4o|sY">
+                                            <field name="VAR" id="/nO?;XSM[vVDZ~+I.qZ6">大人國價錢</field>
+                                            <value name="DELTA">
+                                              <shadow type="math_number" id="AlhhaB2yG:dlnP#4p-{5">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_number" id="|Pa4?UK)nG;3_TEpYh[-">
+                                                <field name="NUM">599</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                    <statement name="ELSE">
+                                      <block type="controls_if" id="otXIQVVGHM?EeAxXoqtv">
+                                        <value name="IF0">
+                                          <block type="logic_compare" id="csczgTLAjjakmRwQUsZ-">
+                                            <field name="OP">LT</field>
+                                            <value name="A">
+                                              <block type="lists_getIndex" id="~,pOe|t+JM`ZtP(Y7@c$">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="Ci(DF:._!=8qcgU/KiB@">
+                                                    <field name="VAR" id=",2vv]ZR.YE@J%Ii=E0c^">年齡</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="variables_get" id="yi#{jV*%zGP+)O@z]`x~">
+                                                    <field name="VAR" id="5GnwyOl/l$V|QG4_YGse">i</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="So!U!.i{T[H.PxU%SuWw">
+                                                <field name="NUM">7</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="math_change" id="?gBDZZ*415|:@0#d3Mpn">
+                                            <field name="VAR" id="Wo[7_COPpTm(?ycq~h*e">大人國-12以下</field>
+                                            <value name="DELTA">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_number" id="Qe{,3|0OV#?C.JG},Ca(">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="math_change" id="txtG=%miJSs@Dc@,WH:M">
+                                            <field name="VAR" id="/nO?;XSM[vVDZ~+I.qZ6">大人國價錢</field>
+                                            <value name="DELTA">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_number" id=";b-vV29i3G[Kgkb+tUG%">
+                                                <field name="NUM">299</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="controls_whileUntil" id="`KoxDS:H)AoDLI)nY.aD">
+                                    <field name="MODE">UNTIL</field>
+                                    <value name="BOOL">
+                                      <block type="logic_operation" id="}(*PTDNb]N$^jY!W|-*Y">
+                                        <field name="OP">OR</field>
+                                        <value name="A">
+                                          <block type="logic_compare" id="8K,N,N44vOV1LWsczcb!">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="*wBPa[je]=uku-+h(IcV">
+                                                <field name="VAR" id="Jb$z-Yg!3{$-GgDjaxth">大人國-65以上</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="G/c+r)10j{Asy6!B/Fqk">
+                                                <field name="NUM">0</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="logic_compare" id="n7[}?Tma+qX:swu,yZ?s">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="FiE$~*;8RAYpJj7|uvVp">
+                                                <field name="VAR" id="Wo[7_COPpTm(?ycq~h*e">大人國-12以下</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="4f;?;I@dv=B;u6e+s]:x">
+                                                <field name="NUM">0</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO">
+                                      <block type="controls_if" id="9/oRU9s.VQEo!rb#FB!1">
+                                        <value name="IF0">
+                                          <block type="logic_operation" id=",MUkaJVrha#d63bY6Zr`">
+                                            <field name="OP">AND</field>
+                                            <value name="A">
+                                              <block type="logic_compare" id="NLO1F=_]uM]WT*Kdi7NI">
+                                                <field name="OP">NEQ</field>
+                                                <value name="A">
+                                                  <block type="variables_get" id="3iXkD1!)l3g.J.Pl~CTb">
+                                                    <field name="VAR" id="Jb$z-Yg!3{$-GgDjaxth">大人國-65以上</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="3?^`[OJ:OkWQZ?{Q-vwq">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="logic_compare" id="`.lI;+0M,P.6pJi/@RT$">
+                                                <field name="OP">NEQ</field>
+                                                <value name="A">
+                                                  <block type="variables_get" id="okFJ/F^Kzoqnh7@/B]-k">
+                                                    <field name="VAR" id="Wo[7_COPpTm(?ycq~h*e">大人國-12以下</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="N?#yBMf$^m1FTB+2j7$0">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="math_change" id="^T`%cgQNk!k1I/Jn-;L}">
+                                            <field name="VAR" id="Wo[7_COPpTm(?ycq~h*e">大人國-12以下</field>
+                                            <value name="DELTA">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_number" id="p9?{fkXbOF2Kr~M6eo4P">
+                                                <field name="NUM">-1</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="math_change" id="P?kdVhy,1IgCi#n$Aqdy">
+                                                <field name="VAR" id="Jb$z-Yg!3{$-GgDjaxth">大人國-65以上</field>
+                                                <value name="DELTA">
+                                                  <shadow type="math_number">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="math_number" id="}s!yv[0~32p5zY^xdv~b">
+                                                    <field name="NUM">-1</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="math_change" id="2*pSpp;__(6_I{nt!9lr">
+                                                    <field name="VAR" id="/nO?;XSM[vVDZ~+I.qZ6">大人國價錢</field>
+                                                    <value name="DELTA">
+                                                      <shadow type="math_number">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="math_number" id="kSL^i}*lpXkPk+~LCTtU">
+                                                        <field name="NUM">-299</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="controls_for" id=".Sf{^ni~T![PlR.}j}p_">
+                                        <field name="VAR" id="5GnwyOl/l$V|QG4_YGse">i</field>
+                                        <value name="FROM">
+                                          <shadow type="math_number">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="math_number" id="p|?ELDTKQX;HIX,@=mf_">
+                                            <field name="NUM">1</field>
+                                          </block>
+                                        </value>
+                                        <value name="TO">
+                                          <shadow type="math_number">
+                                            <field name="NUM">10</field>
+                                          </shadow>
+                                          <block type="variables_get" id="=QH|1Ra_d5?(=p=*NS,/">
+                                            <field name="VAR" id="MZHw_ln%n8awl-=H+ju1">人數</field>
+                                          </block>
+                                        </value>
+                                        <value name="BY">
+                                          <shadow type="math_number">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="math_number" id="0pOw*!og?qX2#0{*]-Tu">
+                                            <field name="NUM">1</field>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="controls_if" id="!R$@~,AF}=~MaDOegP/)">
+                                            <mutation else="1"></mutation>
+                                            <value name="IF0">
+                                              <block type="math_number_property" id="A0wZNh/[x+MYPA0pOO::">
+                                                <mutation divisor_input="false"></mutation>
+                                                <field name="PROPERTY">WHOLE</field>
+                                                <value name="NUMBER_TO_CHECK">
+                                                  <shadow type="math_number" id="^B^vN2BksNqW^|:.,(wy">
+                                                    <field name="NUM">0</field>
+                                                  </shadow>
+                                                  <block type="math_arithmetic" id="yl,:4Z)*|=Hmg$|LLO@W">
+                                                    <field name="OP">DIVIDE</field>
+                                                    <value name="A">
+                                                      <shadow type="math_number" id=".fm*xi@kdtrO/xXDYEO:">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="lists_getIndex" id="5y?kffo;tj[fq)S;[emG">
+                                                        <mutation statement="false" at="true"></mutation>
+                                                        <field name="MODE">GET</field>
+                                                        <field name="WHERE">FROM_START</field>
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="TjQ_ikq}QE_JQ*}sCkf|">
+                                                            <field name="VAR" id=",2vv]ZR.YE@J%Ii=E0c^">年齡</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="AT">
+                                                          <block type="variables_get" id="lT_FJ)QH.fng*AP4h(gL">
+                                                            <field name="VAR" id="5GnwyOl/l$V|QG4_YGse">i</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <shadow type="math_number" id="Q,=Q|9.V,w`At3-jCTIq">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="math_number" id="3f|wnp,d1Xf?}{rpe%FD">
+                                                        <field name="NUM">7</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="ELSE">
+                                              <block type="controls_if" id="$Ozg*sXJYc5~O/CRGg9n">
+                                                <mutation else="1"></mutation>
+                                                <value name="IF0">
+                                                  <block type="logic_compare" id="=k5F5IY/,s@zl[H-y7D1">
+                                                    <field name="OP">GT</field>
+                                                    <value name="A">
+                                                      <block type="lists_getIndex" id="_U+W]6b)Q[R*JWI):*7t">
+                                                        <mutation statement="false" at="true"></mutation>
+                                                        <field name="MODE">GET</field>
+                                                        <field name="WHERE">FROM_START</field>
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="X[F17_b#WF-#Z2*0mSo3">
+                                                            <field name="VAR" id=",2vv]ZR.YE@J%Ii=E0c^">年齡</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="AT">
+                                                          <block type="variables_get" id="L/A#z1)WPz!:;g;br4F/">
+                                                            <field name="VAR" id="5GnwyOl/l$V|QG4_YGse">i</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_number" id="+gz$kbx{{u|fueWF1cKG">
+                                                        <field name="NUM">9</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO0">
+                                                  <block type="math_change" id="TY@Stzcq,5qCc3JJr3Xz">
+                                                    <field name="VAR" id="/pC]a#1`P4:[z9xs.e,*">七福村價錢</field>
+                                                    <value name="DELTA">
+                                                      <shadow type="math_number">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="math_number" id="@m,v@jPav;4zX78[,`o]">
+                                                        <field name="NUM">499</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <statement name="ELSE">
+                                                  <block type="math_change" id="~30[Vf(tnb%xa.z?NJfv">
+                                                    <field name="VAR" id="/pC]a#1`P4:[z9xs.e,*">七福村價錢</field>
+                                                    <value name="DELTA">
+                                                      <shadow type="math_number">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="math_number" id="Wd`Sw2ThyKNMV3j|:Iwo">
+                                                        <field name="NUM">299</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="controls_if" id="L$U,:kslG@It*eecB7#8">
+                                            <mutation else="1"></mutation>
+                                            <value name="IF0">
+                                              <block type="logic_compare" id="$Sq^JWdVG8W#ztPoN4HH">
+                                                <field name="OP">LT</field>
+                                                <value name="A">
+                                                  <block type="variables_get" id="(vOmbe{`/s$a(Vvohh[/">
+                                                    <field name="VAR" id="/nO?;XSM[vVDZ~+I.qZ6">大人國價錢</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="variables_get" id="h/%^KpMCOn^1:2-Mm*aK">
+                                                    <field name="VAR" id="/pC]a#1`P4:[z9xs.e,*">七福村價錢</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block type="text_print" id="5`D?x7*hx3G}oAIM;K?a">
+                                                <value name="TEXT">
+                                                  <shadow type="text" id="53/#T30Ca|hyGU~+b8qv">
+                                                    <field name="TEXT">abc</field>
+                                                  </shadow>
+                                                  <block type="text_join" id="~]`7]syrr!dM+vkmrz`F">
+                                                    <mutation items="2"></mutation>
+                                                    <value name="ADD0">
+                                                      <block type="text" id="K+ncSJ.7~G9aM;e1GQ7F">
+                                                        <field name="TEXT">大人國 </field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ADD1">
+                                                      <block type="variables_get" id="so.:jDyIW}Iidma*/^}x">
+                                                        <field name="VAR" id="/nO?;XSM[vVDZ~+I.qZ6">大人國價錢</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <statement name="ELSE">
+                                              <block type="text_print" id="*KD)D1w-VONM0e(Rr@05">
+                                                <value name="TEXT">
+                                                  <shadow type="text">
+                                                    <field name="TEXT">abc</field>
+                                                  </shadow>
+                                                  <block type="text_join" id="Z][Rx+Q[0Fq[7VR3c.c*">
+                                                    <mutation items="2"></mutation>
+                                                    <value name="ADD0">
+                                                      <block type="text" id="PZn+V/U+XB#IM=Evc!iR">
+                                                        <field name="TEXT">七福村 </field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ADD1">
+                                                      <block type="variables_get" id="Zyr~jg%2M}Q)p_n?YWCc">
+                                                        <field name="VAR" id="/pC]a#1`P4:[z9xs.e,*">七福村價錢</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
