@@ -1,0 +1,832 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="NY#bTE]s$2*fvXw!55$|">白球</variable>
+    <variable id="5qKy;/hm_0Mp?sr+;@o{">紅球</variable>
+    <variable id="HLQL#^Bt5pdw]+!H@S1O">輸入白球</variable>
+    <variable id=",Ll/21-w;%{InG8X[P!H">i</variable>
+    <variable id="M+6MVStcA5aI4%~ps!Dm">結果</variable>
+  </variables>
+  <block type="variables_set" id="qJl7m]KPm*JQ5AX`vSum" x="-9" y="11">
+    <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="!thaC[.%Z|KUF#(?o9O)">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="ShK*Na[DzIYL%}/nhm1{">
+        <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+        <value name="VALUE">
+          <block type="text_prompt_ext" id="qD=@)r.g)v$YSJ0,@(w?">
+            <mutation type="TEXT"></mutation>
+            <field name="TYPE">TEXT</field>
+            <value name="TEXT">
+              <shadow type="text" id="5R9Z_xPjPtSoZmO~!v/E">
+                <field name="TEXT">請輸入文字</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id=",`o%RZGx.^Lm_!qve/#f">
+            <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+            <value name="VALUE">
+              <block type="math_arithmetic" id=";;:~wMvF.}dZjZe*p=s~">
+                <field name="OP">MULTIPLY</field>
+                <value name="A">
+                  <shadow type="math_number" id="*AV%Uy}^Hf:Jz,/4mIiv">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id=")nucp/*0]ORIfjvsl*9(">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="d5.A[7:2D$hCm+~IrXPG">
+                    <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="#OPk@T;AmG@mA.r]mp:b">
+                <field name="VAR" id="HLQL#^Bt5pdw]+!H@S1O">輸入白球</field>
+                <value name="VALUE">
+                  <block type="text_prompt_ext" id="FIKPSP(J25Q?=;sq0a{)">
+                    <mutation type="TEXT"></mutation>
+                    <field name="TYPE">TEXT</field>
+                    <value name="TEXT">
+                      <shadow type="text" id="-`@6Pd#?fjMx_JD%jd8d">
+                        <field name="TEXT">請輸入文字</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="G`HNXj3-,-.J~2Cduw#4">
+                    <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                    <value name="VALUE">
+                      <block type="lists_split" id="/r@pAhQCYkK(-lQrNHMn">
+                        <mutation mode="SPLIT"></mutation>
+                        <field name="MODE">SPLIT</field>
+                        <value name="INPUT">
+                          <block type="variables_get" id="$o{nG,+*AowDSJ7nH:wz">
+                            <field name="VAR" id="HLQL#^Bt5pdw]+!H@S1O">輸入白球</field>
+                          </block>
+                        </value>
+                        <value name="DELIM">
+                          <block type="text" id="zl;4uab/|y-/Qi[2Ex[A">
+                            <field name="TEXT"> </field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="controls_for" id="VHvE!uoO74F46f@#3:*#">
+                        <field name="VAR" id=",Ll/21-w;%{InG8X[P!H">i</field>
+                        <value name="FROM">
+                          <shadow type="math_number" id="Mfchn,)4)k=?Xne+X(_~">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow type="math_number" id="GqQ_B?YS~]B_Jvc`1#T7">
+                            <field name="NUM">3</field>
+                          </shadow>
+                        </value>
+                        <value name="BY">
+                          <shadow type="math_number" id="55uA}-kx)d{^Pc)B}]m@">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <statement name="DO">
+                          <block type="lists_setIndex" id="%G16${3YJAA(ouY!Ze}C">
+                            <mutation at="true"></mutation>
+                            <field name="MODE">SET</field>
+                            <field name="WHERE">FROM_START</field>
+                            <value name="LIST">
+                              <block type="variables_get" id="=8!wmfNN7lg/LBtBK0TL">
+                                <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="variables_get" id="g(}wNPXy11WgII0r/@E:">
+                                <field name="VAR" id=",Ll/21-w;%{InG8X[P!H">i</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block type="math_arithmetic" id="/X.MC?%HQD6icwBog.TE">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <shadow type="math_number" id=":hr.xbYVaqN50dW]KIY?">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="s=(JhmASM[XC:NK#rv9?">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="lists_getIndex" id="x8A:)7*x8[IlVc!$Ev6.">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_START</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="K!yV!Z{T7_ChbdXVhGk8">
+                                        <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="sXJ:}]cP|RszxZW=/}c:">
+                                        <field name="VAR" id=",Ll/21-w;%{InG8X[P!H">i</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="msN%HjFNOc,a]m0V0p28">
+                            <mutation else="1"></mutation>
+                            <value name="IF0">
+                              <block type="logic_compare" id="^Vkkfhzp.T=.un(#)1a6">
+                                <field name="OP">GT</field>
+                                <value name="A">
+                                  <block type="variables_get" id="M5DwDNwR~Pz:8a/5YeF)">
+                                    <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="#(xkx}jt*[Q[hpBVst)!">
+                                    <field name="NUM">7</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="variables_set" id="MOhqbZD3jdfREat!q+;q">
+                                <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                <value name="VALUE">
+                                  <block type="text" id="E-H|o~H=_IwB8)C8!)FA">
+                                    <field name="TEXT">未中獎</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <statement name="ELSE">
+                              <block type="controls_if" id="T-MAmMnzZM+yA8Sz_PyL">
+                                <mutation elseif="7" else="1"></mutation>
+                                <value name="IF0">
+                                  <block type="logic_compare" id="]kz6T?*OBA_[j^1bRZh^">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="%3:/,@lasRXvEMG%+GOm">
+                                        <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="j,Xih/l=?Jk4xF_a7}cl">
+                                        <field name="NUM">7</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="variables_set" id="D^4J2%COUo2m8/gNU(K{">
+                                    <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="Gf(9}FJfJVzAKQ^C7xA(">
+                                        <field name="TEXT">特獎</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <value name="IF1">
+                                  <block type="logic_compare" id="ucZ%8hz,l~9`X;,![R9#">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="math_modulo" id="Co5an#^~d0o#vYkf,iWH">
+                                        <value name="DIVIDEND">
+                                          <shadow type="math_number" id="0V*!z9)N~KkJKWfC|UtZ">
+                                            <field name="NUM">64</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="q4~h(lX;53qBNz,LIz`v">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <shadow type="math_number" id="cU-B:.K5D`C:mIO#9Sr{">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="#EX)N`lT3h^1e)`mz*!M">
+                                                <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number" id="2ZqIogn{.4=FEFBz?sh3">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="lists_getIndex" id="#]@tc@^[MvKiEs7-c+50">
+                                                <mutation statement="false" at="false"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FIRST</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="t8DON%y^rM0yc*Rnc!M0">
+                                                    <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="DIVISOR">
+                                          <shadow type="math_number" id="Yj^*PG-ECrw%LQ|bY%V!">
+                                            <field name="NUM">7</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="Ct_d9.6FjmAwy-V+O6TX">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO1">
+                                  <block type="variables_set" id="_q?2T3K)v{02D4l^n0.G">
+                                    <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="Xsme[=J};0$gv9MpHNSN">
+                                        <field name="TEXT">頭獎</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <value name="IF2">
+                                  <block type="logic_compare" id="|AHsc.S%w_2h|j]u1+?P">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="math_modulo" id=")G`BJhwz:@g_}/4h(EX(">
+                                        <value name="DIVIDEND">
+                                          <shadow type="math_number">
+                                            <field name="NUM">64</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="$VaA0KU@Wbwrf98?Jv=i">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="KVceiDQXkm%+gh-%=a9:">
+                                                <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="lists_getIndex" id="K.)Um-QFRE}Ic/Md/xwk">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="wwq;fcU-g,},9Mz4dt9V">
+                                                    <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="math_number" id="C~-|Mh12(wV:=I%kQx`-">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="DIVISOR">
+                                          <shadow type="math_number" id="MmY?dkhTW_[w~#7,@[ob">
+                                            <field name="NUM">7</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="Iv%l;jvKP[)9FNs7E7a.">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO2">
+                                  <block type="variables_set" id="Y$_G9IBpU%Di^oxM@^YW">
+                                    <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="Z##4Hh(]q9cf}gr1kAuB">
+                                        <field name="TEXT">頭獎</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <value name="IF3">
+                                  <block type="logic_compare" id="O*VeQ=#1G~!2{h]rD)pf">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="math_modulo" id="1Vmx2f;U9ft!j~kOu4?x">
+                                        <value name="DIVIDEND">
+                                          <shadow type="math_number">
+                                            <field name="NUM">64</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="6kF|Xe~SrlnT-NnKdCzh">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="Kc0ptif;31`4.n(TNsb}">
+                                                <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="lists_getIndex" id="arwmb5qt[Ieh|)v9k?Mh">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="3k%Kdn%`^KV*dRiAbjCu">
+                                                    <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="math_number" id="P:Mgy)08cWCh0W+XWL3~">
+                                                    <field name="NUM">3</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="DIVISOR">
+                                          <shadow type="math_number" id="-KuF%xlX##1{BMGN5Z{l">
+                                            <field name="NUM">7</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="V`YodddG#QsdaFB`8m#n">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO3">
+                                  <block type="variables_set" id="onccPY-5Gto.PO:.Wf58">
+                                    <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="W`$4@%OT$^SKg.*,D))B">
+                                        <field name="TEXT">頭獎</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <value name="IF4">
+                                  <block type="logic_compare" id="0ee0?uBho+qPbs0R5Wkn">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="math_modulo" id="wu(V!Rp,:=YHNEM98T,6">
+                                        <value name="DIVIDEND">
+                                          <shadow type="math_number" id="-YG6U$4q`o,g[XyC)(rZ">
+                                            <field name="NUM">64</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="4{Xi/:h8nws`[o,=#*#T">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <shadow type="math_number" id="3^tn[[I@_%@_i;Ve7A{Q">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_arithmetic" id="h3-uM|45Yb_mEa?b2n/N">
+                                                <field name="OP">ADD</field>
+                                                <value name="A">
+                                                  <shadow type="math_number">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="kv3OilEL4AH*g+?f3z=[">
+                                                    <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <shadow type="math_number" id="OfnpqQAMam7H7Wd`063$">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="lists_getIndex" id="Ge0-#}jwHjP2(k8ot)+:">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_START</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="sqgA~3z02tu/+SJQi-xr">
+                                                        <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="math_number" id="2K^:B68rz4Dybfe2@0{v">
+                                                        <field name="NUM">1</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="lists_getIndex" id="YW7^;4mDdiJ^sF_Glv9E">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="-/S*=O);YcGtkERMgD*H">
+                                                    <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="math_number" id="7Ff?7mop+A`6Y?5L7dv8">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="DIVISOR">
+                                          <shadow type="math_number" id="mO12C4G4@KW_?IB{*v=]">
+                                            <field name="NUM">7</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="@c~P$!UJ4#D%G[E}2]yb">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO4">
+                                  <block type="variables_set" id="EkLBxmuhB!6?Q(KT)4z4">
+                                    <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="eq9}-0nMKk5*nE$[eKp3">
+                                        <field name="TEXT">二獎</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <value name="IF5">
+                                  <block type="logic_compare" id="EM1c[*L@]RQ7|-Z8kXR[">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="math_modulo" id="hQOoW{w):H#]t^P3MDp;">
+                                        <value name="DIVIDEND">
+                                          <shadow type="math_number">
+                                            <field name="NUM">64</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="9Eg^CsZrn]P~/q!iyvJn">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_arithmetic" id="2lzL7RxLq#S^d:(it,@/">
+                                                <field name="OP">ADD</field>
+                                                <value name="A">
+                                                  <shadow type="math_number">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="`vp71HBuz!XYZrq~M`D8">
+                                                    <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <shadow type="math_number">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="lists_getIndex" id="hT;EowaeAVXTjjIHwNJK">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_START</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="RyX+y%g|%~DWa|5g0EHI">
+                                                        <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="math_number" id="Mo23*S;,$HzhH/w*Q/p[">
+                                                        <field name="NUM">1</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="lists_getIndex" id="ab]we%bi+;-Zp;d3M^Tk">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="8`(QT-o`XJ+#Uf.w=e}[">
+                                                    <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="math_number" id="iYyu=]`*XX+Do?QdTHZ;">
+                                                    <field name="NUM">3</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="DIVISOR">
+                                          <shadow type="math_number" id="|y$blmm:{htmms*UY-$b">
+                                            <field name="NUM">7</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="QWV`KCDR^k9]l0o]@!Dl">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO5">
+                                  <block type="variables_set" id="|?,SNwuQ#ih.*#aGT2;U">
+                                    <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="a+2,6Dj6U;DkB7PE55][">
+                                        <field name="TEXT">二獎</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <value name="IF6">
+                                  <block type="logic_compare" id="xKP;R6C1Y2t)u-V1x-ia">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="math_modulo" id="d6A5E6=1^Ac=pX0Rl1P-">
+                                        <value name="DIVIDEND">
+                                          <shadow type="math_number">
+                                            <field name="NUM">64</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="zPrn{RzsLE3zB.l*Wl.C">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_arithmetic" id="QQCRbh5xHa%Y?!S8~0lb">
+                                                <field name="OP">ADD</field>
+                                                <value name="A">
+                                                  <shadow type="math_number">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="Q=LfAza;ucJ$}tSPIKVL">
+                                                    <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <shadow type="math_number">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="lists_getIndex" id="lL!W;^*}_uMVL/?hjZvj">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_START</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="8{ne%v)|0Cn#~j*NoVsj">
+                                                        <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="math_number" id="1OTqH:[e/S?REz:/CJF%">
+                                                        <field name="NUM">2</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="lists_getIndex" id="OJ5Jtb2E}Xu73(8cck6=">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="nZ[:Oc#S02(NS{J}{P/.">
+                                                    <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="math_number" id="FGEINS3=PFYbiS^_Zt+@">
+                                                    <field name="NUM">3</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="DIVISOR">
+                                          <shadow type="math_number" id="I7@7.osp%FX-H/N]IAug">
+                                            <field name="NUM">7</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="nR`AXmDTnO,:o_EA+/)g">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO6">
+                                  <block type="variables_set" id="XtBcU3(N?ew]-B-dG+Gc">
+                                    <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="YGOG%l3-|G,D5:-$hz34">
+                                        <field name="TEXT">二獎</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <value name="IF7">
+                                  <block type="logic_compare" id="n`YSDCHx2o43NK28qR~-">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="math_modulo" id="Eb0[CYM-1KwAdUQ.8DPK">
+                                        <value name="DIVIDEND">
+                                          <shadow type="math_number" id="YB(IQai;lGLBua0rsV_e">
+                                            <field name="NUM">64</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="fx0s1b979hx|rOONRp$?">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <shadow type="math_number" id="P{f]X+lpUJs)3K.!Lja|">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_arithmetic" id="dKbdUHvN3BTg9_.G{IAF">
+                                                <field name="OP">ADD</field>
+                                                <value name="A">
+                                                  <shadow type="math_number">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="math_arithmetic" id="wM+aO/nY*+MOYcJ$,5^i">
+                                                    <field name="OP">ADD</field>
+                                                    <value name="A">
+                                                      <shadow type="math_number">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="variables_get" id="F/,W;C!`uy8NFJ~C5eIC">
+                                                        <field name="VAR" id="5qKy;/hm_0Mp?sr+;@o{">紅球</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <shadow type="math_number">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="lists_getIndex" id="U5nL[*nW+PLmL^%J@}K!">
+                                                        <mutation statement="false" at="true"></mutation>
+                                                        <field name="MODE">GET</field>
+                                                        <field name="WHERE">FROM_START</field>
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="]Wn;|AVcsNunOww%Hc-y">
+                                                            <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="AT">
+                                                          <block type="math_number" id="IvPNi/(n+B9!,U9FSN-c">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <shadow type="math_number">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="lists_getIndex" id=";e!/-$c{!0vZjTdG+W?X">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_START</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="3TdgkU`7HH)n=f1;69!p">
+                                                        <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="math_number" id="$QW]4`?`3PU])qb.X;r~">
+                                                        <field name="NUM">2</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number" id="~7!wtErTkduM`dy?2X;H">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="lists_getIndex" id="/Y25~B}aZzm%9eq^`GGS">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="iI~t=_:0DarU+^HWdWN|">
+                                                    <field name="VAR" id="NY#bTE]s$2*fvXw!55$|">白球</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="math_number" id="@1,0H|A]nw~?Gu|8T9qq">
+                                                    <field name="NUM">3</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="DIVISOR">
+                                          <shadow type="math_number" id="BZ4981cRKnR-Iq0W7Kb3">
+                                            <field name="NUM">7</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="GleWO5vBno4IbK@JDk.n">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO7">
+                                  <block type="variables_set" id="#^n8z[gQGW0MpGP{(2Az">
+                                    <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="H:7mOSGH9_/C5oeMdQxk">
+                                        <field name="TEXT">三獎</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <statement name="ELSE">
+                                  <block type="variables_set" id="-Pma][51IQE_DdiKyhG{">
+                                    <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="8%tkwaqf}KEhuPm8@e_?">
+                                        <field name="TEXT">未中獎</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="text_print" id="@/YxVt65|.dYj!?2Df[?">
+                                <value name="TEXT">
+                                  <shadow type="text" id=".xRb,bC@WxjxAV#k2vSY">
+                                    <field name="TEXT">abc</field>
+                                  </shadow>
+                                  <block type="variables_get" id="M{[)[2dqV3kk{}dk029U">
+                                    <field name="VAR" id="M+6MVStcA5aI4%~ps!Dm">結果</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
