@@ -1,0 +1,215 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="RplWfDk:U1v%BK)R[5wv">飲料</variable>
+    <variable id="`+V;11f$Hb^seGODemM;">有幾杯</variable>
+    <variable id=";_On_;`%ZV*ELPI@}HI$">輸入價格</variable>
+    <variable id="4R+Y.VU*6|b33$D/lFx3">i</variable>
+    <variable id="9Tt@I[AF6iYvL+!lw`HS">價格</variable>
+  </variables>
+  <block type="variables_set" id="bo4vqdlwQSO2Nw52zA!A" x="293" y="404">
+    <field name="VAR" id="RplWfDk:U1v%BK)R[5wv">飲料</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="CcED,904u_sb2-cXDnG0">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="0]zS/h|J$g#Y9QVVLXIQ">
+        <field name="VAR" id="`+V;11f$Hb^seGODemM;">有幾杯</field>
+        <value name="VALUE">
+          <block type="text_prompt_ext" id=",tgRw?.I0kg:d|^lLkEB">
+            <mutation type="TEXT"></mutation>
+            <field name="TYPE">TEXT</field>
+            <value name="TEXT">
+              <shadow type="text" id="wV%p|g{F^hr8~~?}er`1">
+                <field name="TEXT">請輸入文字</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="3{8l)pxAm1wW}~`DDV.6">
+            <field name="VAR" id=";_On_;`%ZV*ELPI@}HI$">輸入價格</field>
+            <value name="VALUE">
+              <block type="text_prompt_ext" id="(W,KbsK#,@^p7wnF~Iq^">
+                <mutation type="TEXT"></mutation>
+                <field name="TYPE">TEXT</field>
+                <value name="TEXT">
+                  <shadow type="text" id="?)8ai%4j]}XRS+VmL*Nf">
+                    <field name="TEXT">請輸入文字</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="?l$E7h8#O66[c/M?1%p#">
+                <field name="VAR" id="RplWfDk:U1v%BK)R[5wv">飲料</field>
+                <value name="VALUE">
+                  <block type="lists_split" id="Hul-yi|*O10.E`4,n)sc">
+                    <mutation mode="SPLIT"></mutation>
+                    <field name="MODE">SPLIT</field>
+                    <value name="INPUT">
+                      <block type="variables_get" id="P[][,MH|wZimO0d6]{aI">
+                        <field name="VAR" id=";_On_;`%ZV*ELPI@}HI$">輸入價格</field>
+                      </block>
+                    </value>
+                    <value name="DELIM">
+                      <block type="text" id="^6$l+fbj?a]yo3B5xy*r">
+                        <field name="TEXT"> </field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_for" id="e}pXz$Xh,F/bA?nZ1wj^">
+                    <field name="VAR" id="4R+Y.VU*6|b33$D/lFx3">i</field>
+                    <value name="FROM">
+                      <shadow type="math_number" id="_fMUH23SQ^]?^MXcf}]$">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow type="math_number" id=";Qq}yZ=lR=Dv|~}h.y@@">
+                        <field name="NUM">10</field>
+                      </shadow>
+                      <block type="variables_get" id="+|6I_](iwA%tzP{Tqvf^">
+                        <field name="VAR" id="`+V;11f$Hb^seGODemM;">有幾杯</field>
+                      </block>
+                    </value>
+                    <value name="BY">
+                      <shadow type="math_number" id="5NTfWYY(FBak@i9d.$,x">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <statement name="DO">
+                      <block type="lists_setIndex" id="Qiw1.+3:o8ir^Mh++_RS">
+                        <mutation at="true"></mutation>
+                        <field name="MODE">SET</field>
+                        <field name="WHERE">FROM_START</field>
+                        <value name="LIST">
+                          <block type="variables_get" id=",-}xgMf@~.-YX?r-W/fI">
+                            <field name="VAR" id="RplWfDk:U1v%BK)R[5wv">飲料</field>
+                          </block>
+                        </value>
+                        <value name="AT">
+                          <block type="variables_get" id="}s.+A?@J928?=WX0hGH)">
+                            <field name="VAR" id="4R+Y.VU*6|b33$D/lFx3">i</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="math_arithmetic" id="L-F%SQ5fU]3rF%~R`WI9">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <shadow type="math_number" id="^VA_qy4r`6ZJ6O9vE,U%">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="UwbbRXi}rUf~fN7,`$6`">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="lists_getIndex" id="LlK%nTM`/RBk*):e9/lP">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_START</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="%eZ)`sH8_C5cY8c,1gJ(">
+                                    <field name="VAR" id="RplWfDk:U1v%BK)R[5wv">飲料</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="variables_get" id="0YS?@r9O3mGt,XxPH8Vg">
+                                    <field name="VAR" id="4R+Y.VU*6|b33$D/lFx3">i</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="variables_set" id="z8n@ky{Xzb|a)prvyxxZ">
+                        <field name="VAR" id="RplWfDk:U1v%BK)R[5wv">飲料</field>
+                        <value name="VALUE">
+                          <block type="lists_sort" id=".f8E0EKYh,nnJCEEv}93">
+                            <field name="TYPE">NUMERIC</field>
+                            <field name="DIRECTION">-1</field>
+                            <value name="LIST">
+                              <block type="variables_get" id="OPy4yvLiM)lf+68Ba]AO">
+                                <field name="VAR" id="RplWfDk:U1v%BK)R[5wv">飲料</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_if" id="NZiIm5~|pAQ[6Xwxc+$^">
+                            <value name="IF0">
+                              <block type="logic_compare" id="6#04DnzHDAb:MA02{wpn">
+                                <field name="OP">GT</field>
+                                <value name="A">
+                                  <block type="variables_get" id="L/_5pRkC7gV,.D-bH{5S">
+                                    <field name="VAR" id="`+V;11f$Hb^seGODemM;">有幾杯</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="Z#=aPffVO.3bz8a}iVVa">
+                                    <field name="NUM">5</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="lists_getIndex" id="p7_Ll;DAEk1YNm-(]z5Y">
+                                <mutation statement="true" at="false"></mutation>
+                                <field name="MODE">REMOVE</field>
+                                <field name="WHERE">LAST</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="Zf^0;+gJ#Yo;6D4)b4)r">
+                                    <field name="VAR" id="RplWfDk:U1v%BK)R[5wv">飲料</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="variables_set" id="E{|IYesLvX+JI}=?3%$Y">
+                                <field name="VAR" id="9Tt@I[AF6iYvL+!lw`HS">價格</field>
+                                <value name="VALUE">
+                                  <block type="math_on_list" id="|9_,t+kCs?pxk@n8_5y}">
+                                    <mutation op="SUM"></mutation>
+                                    <field name="OP">SUM</field>
+                                    <value name="LIST">
+                                      <block type="variables_get" id="Og1%N]J)Msb3x^EBH)v5">
+                                        <field name="VAR" id="RplWfDk:U1v%BK)R[5wv">飲料</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="text_print" id=",!KB_0cc=WY/j(h)AS`V">
+                                    <value name="TEXT">
+                                      <shadow type="text" id="]*@DqO*qeZ?o~ivEQaiA">
+                                        <field name="TEXT">abc</field>
+                                      </shadow>
+                                      <block type="variables_get" id="(2|H{m8D_Z8^%_]W$^C.">
+                                        <field name="VAR" id="9Tt@I[AF6iYvL+!lw`HS">價格</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
