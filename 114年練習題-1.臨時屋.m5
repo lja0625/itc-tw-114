@@ -1,0 +1,314 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="A+-=Kx;LiNwIK(pAw8ql">人數</variable>
+    <variable id="Nz$s2fE#eEIl0on*`[@+">房間</variable>
+    <variable id="H6xrJbyW%/l3.zXP48O3">容納</variable>
+    <variable id="Ow%Y~}+}`t3wtR3sv0E?">a</variable>
+    <variable id="FM+(-8Pc2w#yhB:VM_Jo">c</variable>
+    <variable id="vs+k5PP]04}X7.!hc2cp">i</variable>
+  </variables>
+  <block type="variables_set" id="MHjnjd6$B;D_Spohr|W@" x="438" y="38">
+    <field name="VAR" id="A+-=Kx;LiNwIK(pAw8ql">人數</field>
+    <value name="VALUE">
+      <block type="math_number" id="WKIw$(H+~Y#SeglU3kmH">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="`qSl{F.g0OJALh%`214]">
+        <field name="VAR" id="Nz$s2fE#eEIl0on*`[@+">房間</field>
+        <value name="VALUE">
+          <block type="math_number" id="(%1%eGk53/|zWctfMo-T">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="8Kwmpi`:!h6vJUuWj{V!">
+            <field name="VAR" id="H6xrJbyW%/l3.zXP48O3">容納</field>
+            <value name="VALUE">
+              <block type="lists_create_with" id=",@mq=j.TJh^oSY5~D1l(">
+                <mutation items="0"></mutation>
+              </block>
+            </value>
+            <next>
+              <block type="sensing_askandwait" id="jj`SnE{q$U3OY_Mqgr@J">
+                <value name="TEXT">
+                  <block type="text" id="gM*[{$3jGeud/1K+J6Tm">
+                    <field name="TEXT">人數</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id=")qJoJYC8Y3I3lpS/JaNd">
+                    <field name="VAR" id="Ow%Y~}+}`t3wtR3sv0E?">a</field>
+                    <value name="VALUE">
+                      <block type="sensing_answer" id="o3M1Q0Xz;?4u-BP3vO$O"></block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="Y3Qtl5y@ewPm@9z=:f^K">
+                        <field name="VAR" id="A+-=Kx;LiNwIK(pAw8ql">人數</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="mm#gKq=^xuGlBU9%!QfE">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <shadow type="math_number" id="H+70hAiMG|1.z/.txzK0">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="(rR=E{M3Bh[@,C.*$}re">
+                                <field name="VAR" id="Ow%Y~}+}`t3wtR3sv0E?">a</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="28dTiiW=}eZ(yd@|KeB8">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="sensing_askandwait" id="]fEb5(Df=%REmS9Esq-x">
+                            <value name="TEXT">
+                              <block type="text" id="$@cy}KRMI%6iNMH4VbJZ">
+                                <field name="TEXT">房間</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="phhaU|%K-bN3gR=Cy/-c">
+                                <field name="VAR" id="Ow%Y~}+}`t3wtR3sv0E?">a</field>
+                                <value name="VALUE">
+                                  <block type="sensing_answer" id="*zdS7#b5_)]cAeaaPRwz"></block>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="I[dJza-_`JFkyzqk8CH1">
+                                    <field name="VAR" id="Nz$s2fE#eEIl0on*`[@+">房間</field>
+                                    <value name="VALUE">
+                                      <block type="math_arithmetic" id="nS.ikggF|*g$Z]qKrpPU">
+                                        <field name="OP">MULTIPLY</field>
+                                        <value name="A">
+                                          <shadow type="math_number">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="@Z]0(]95eb!+(%kO]P/|">
+                                            <field name="VAR" id="Ow%Y~}+}`t3wtR3sv0E?">a</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="}j^MERJD`uE[ZRou;U]*">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="controls_repeat_ext" id="rTP?XY$M1E8CeF+]zH;n">
+                                        <value name="TIMES">
+                                          <shadow type="math_number" id="O]L|7lc2C@xbx/T[E%ui">
+                                            <field name="NUM">10</field>
+                                          </shadow>
+                                          <block type="variables_get" id="hI41},E5ul8iq;w~1{m8">
+                                            <field name="VAR" id="Nz$s2fE#eEIl0on*`[@+">房間</field>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="sensing_askandwait" id="=AZ,V}#8=6g(NAyU5E0+">
+                                            <value name="TEXT">
+                                              <block type="text" id="Xa@Hs;MKFvABxS-V=t+D">
+                                                <field name="TEXT">容納</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="variables_set" id="FPL}IJXCZXy7NKd({Dhm">
+                                                <field name="VAR" id="Ow%Y~}+}`t3wtR3sv0E?">a</field>
+                                                <value name="VALUE">
+                                                  <block type="sensing_answer" id="d;LknQAE@Iilo;ImQL}z"></block>
+                                                </value>
+                                                <next>
+                                                  <block type="lists_setIndex" id="=zrta.xh$ZA0Q?*aiZ@c">
+                                                    <mutation at="false"></mutation>
+                                                    <field name="MODE">INSERT</field>
+                                                    <field name="WHERE">LAST</field>
+                                                    <value name="LIST">
+                                                      <block type="variables_get" id="O.?v^.W=5TqI[F0IW$1-">
+                                                        <field name="VAR" id="H6xrJbyW%/l3.zXP48O3">容納</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="TO">
+                                                      <block type="math_arithmetic" id="B}*B#m:UKYo-/FE!S/uy">
+                                                        <field name="OP">MULTIPLY</field>
+                                                        <value name="A">
+                                                          <shadow type="math_number" id="Ceu#3C024K~TVK?X?.dM">
+                                                            <field name="NUM">1</field>
+                                                          </shadow>
+                                                          <block type="variables_get" id="mY3n$adwCfD@4PZD(T9=">
+                                                            <field name="VAR" id="Ow%Y~}+}`t3wtR3sv0E?">a</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <shadow type="math_number" id="zcn!k|OuQP;BPva:mbA6">
+                                                            <field name="NUM">1</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="variables_set" id="!`=x9T%wJ@9^(8Vvv:@=">
+                                            <field name="VAR" id="FM+(-8Pc2w#yhB:VM_Jo">c</field>
+                                            <value name="VALUE">
+                                              <block type="math_number" id="D{w10aUPd++UI-Fm+b2p">
+                                                <field name="NUM">0</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="controls_if" id="GD=Qi*tUxf4avvL*xBR6">
+                                                <mutation else="1"></mutation>
+                                                <value name="IF0">
+                                                  <block type="logic_compare" id="w=_%[4?DR`icKHz6zM17">
+                                                    <field name="OP">LTE</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id=",9+MG6bSWmd+Wx~1:a46">
+                                                        <field name="VAR" id="A+-=Kx;LiNwIK(pAw8ql">人數</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_number" id="H%1[[[vwOx-fg}0A(kWI">
+                                                        <field name="NUM">0</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="ELSE">
+                                                  <block type="controls_for" id="`g?68*!0@NbAkx+t%=r#">
+                                                    <field name="VAR" id="vs+k5PP]04}X7.!hc2cp">i</field>
+                                                    <value name="FROM">
+                                                      <shadow type="math_number" id="/0{]Gm@,y,UE)b.ouD(]">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="TO">
+                                                      <shadow type="math_number" id="N)lk:9:rXQz,E=@1t)qp">
+                                                        <field name="NUM">10</field>
+                                                      </shadow>
+                                                      <block type="variables_get" id="6?WwDRgD(un^8j2Qf#*C">
+                                                        <field name="VAR" id="Nz$s2fE#eEIl0on*`[@+">房間</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="BY">
+                                                      <shadow type="math_number" id="w_IWiY$38DY8-B]fYQY;">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <statement name="DO">
+                                                      <block type="variables_set" id=",=0J%(q,6YjA(({*w}VU">
+                                                        <field name="VAR" id="A+-=Kx;LiNwIK(pAw8ql">人數</field>
+                                                        <value name="VALUE">
+                                                          <block type="math_arithmetic" id="8E1cEx}W#cH@?4WHg6$O">
+                                                            <field name="OP">MINUS</field>
+                                                            <value name="A">
+                                                              <shadow type="math_number" id="Ob]=G#lM[t*IdQe$9MIy">
+                                                                <field name="NUM">1</field>
+                                                              </shadow>
+                                                              <block type="variables_get" id="X]98C8^g7#}J-b.y59zL">
+                                                                <field name="VAR" id="A+-=Kx;LiNwIK(pAw8ql">人數</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <shadow type="math_number" id="Zt^fb?m_RFnc=4[q-.Y}">
+                                                                <field name="NUM">1</field>
+                                                              </shadow>
+                                                              <block type="lists_getIndex" id="A[wl}(mnsgb(`+zvI2-!">
+                                                                <mutation statement="false" at="true"></mutation>
+                                                                <field name="MODE">GET</field>
+                                                                <field name="WHERE">FROM_START</field>
+                                                                <value name="VALUE">
+                                                                  <block type="variables_get" id=".NeYD-ysw|JvZMz(2r5,">
+                                                                    <field name="VAR" id="H6xrJbyW%/l3.zXP48O3">容納</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="AT">
+                                                                  <block type="variables_get" id="{ofoRG(H2T@!Xo,IyG:J">
+                                                                    <field name="VAR" id="vs+k5PP]04}X7.!hc2cp">i</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="math_change" id="/rq}^fR;r9.(Kqc.MHrE">
+                                                            <field name="VAR" id="FM+(-8Pc2w#yhB:VM_Jo">c</field>
+                                                            <value name="DELTA">
+                                                              <shadow type="math_number" id="?,@uz9gBL}y+{wcir10^">
+                                                                <field name="NUM">1</field>
+                                                              </shadow>
+                                                              <block type="math_number" id="Q!bO`#F=8_?1kQZA0sW|">
+                                                                <field name="NUM">1</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="controls_if" id="]LWp;vzcJ@^MLSn[7D$L">
+                                                                <value name="IF0">
+                                                                  <block type="logic_compare" id="`^)fRpptoQ+j`}.-P[g!">
+                                                                    <field name="OP">LTE</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="|=v;sC._}6N,m0cdy5{k">
+                                                                        <field name="VAR" id="A+-=Kx;LiNwIK(pAw8ql">人數</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="2R%09FE*0_+rEYWOj5*s">
+                                                                        <field name="NUM">0</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <statement name="DO0">
+                                                                  <block type="controls_flow_statements" id="V^1`8`,v9*]IZ2^sYfud">
+                                                                    <field name="FLOW">BREAK</field>
+                                                                  </block>
+                                                                </statement>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </statement>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="looks_say" id="/n6/`K5]*}n,]{o9Oh3^">
+                                                    <value name="TEXT">
+                                                      <block type="variables_get" id="py^jWP#9XJDJEyQkh:F{">
+                                                        <field name="VAR" id="FM+(-8Pc2w#yhB:VM_Jo">c</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
